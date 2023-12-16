@@ -1,0 +1,21 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.card__image {
+    margin-bottom: 1rem;
+}
+
+.card__name {
+    margin-bottom: .5rem;
+    font-size: 1.2rem;
+}
+
+.card__email {
+
+}

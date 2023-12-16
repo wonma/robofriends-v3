@@ -1,0 +1,15 @@
+.app {
+    display: flex;
+    height: 100dvh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(132, 166, 195);
+}
+
+.app__title {
+    font-family: 'Anton', sans-serif;
+    font-size: 3rem;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+}
