@@ -3,9 +3,6 @@
     background-color: rgb(15, 15, 57);
     padding: 2rem;
     border-radius: 1rem;
-    width: 80%;
-    height: 70%;
-    overflow-y: scroll;
     margin: 0 auto;
 
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
