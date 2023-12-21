@@ -3,6 +3,7 @@ import Card from './Card';
 import './CardList.css';
 
 const CardList = ({robots}) => {
+    // throw new Error();
     return ( 
         <div className="cardList"> 
             {
@@ -14,4 +15,4 @@ const CardList = ({robots}) => {
     )
 }
 
-export default CardList;
+export default CardList; 

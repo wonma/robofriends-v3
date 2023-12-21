@@ -3,6 +3,7 @@ import React from 'react';
 import CardList from './components/CardList';
 import SearchBar from './components/SearchBar';
 import Scroll from './components/Scroll';
+import ErrorBoundary from './components/ErrorBoundary';
 import './App.css';
 
 class App extends React.Component {
@@ -16,7 +17,7 @@ class App extends React.Component {
 
     onInputChange = (event) => {
         this.setState({
-            searchInput: event.target.value
+            searchInput: event.target.value 
         })
     }
 
@@ -40,7 +41,9 @@ class App extends React.Component {
                 <h1 className="tc mb2 app__title">Robofriends</h1>
                 <SearchBar searchInput={this.state.searchInput} onInputChange={this.onInputChange}/>
                 <Scroll>
-                    <CardList robots={filteredRobots}/>
+                    <ErrorBoundary>
+                        <CardList robots={filteredRobots} />
+                    </ErrorBoundary>
                 </Scroll>
             </div>
         )
